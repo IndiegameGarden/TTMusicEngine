@@ -1,3 +1,5 @@
+For audio material license see test-audio/AUDIO-LICENSE.txt.
+
 Copyright (c) 2010-2011, TranceTrance.com and its domain owner
 All rights reserved.
 

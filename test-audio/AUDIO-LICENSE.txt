@@ -1,0 +1,15 @@
+==========================
+LICENSES for audio samples
+==========================
+
+ding.wav: 
+   (c) You-Know-Who
+
+hammond-loop.wav; piano-loop.wav: 
+   Creative Commons CC license Non-Commercial Sampling Plus,
+   http://ccmixter.org/files/samplepacks/6345
+
+synthetic_twoPing.wav; tail_emerald2.wav: 
+   (c) JB, not for further use or redistribution
+   
+   
