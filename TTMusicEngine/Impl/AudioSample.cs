@@ -190,9 +190,9 @@ namespace TTMusicEngine.Impl
                     
                     if (Math.Abs(playPosMs - idealPlayPosMs) > 500 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere?
                     {
-                        //FIXME
-                        channel.setPosition(idealPlayPosMs, FMOD.TIMEUNIT.MS);
-                        playPosMs = idealPlayPosMs;
+                        //FIXME enable tracking when needed !!! below.
+                        //channel.setPosition(idealPlayPosMs, FMOD.TIMEUNIT.MS);
+                        //playPosMs = idealPlayPosMs;
                     }
                     // store current pos on canvas
                     if (canvas.TimeMarker == 0)
