@@ -188,11 +188,11 @@ namespace TTMusicEngine.Impl
                     uint idealPlayPosMs = (uint)(rp.Time * 1000.0);
                     channel.getPosition(ref playPosMs, FMOD.TIMEUNIT.MS);
                     
-                    if (Math.Abs(playPosMs - idealPlayPosMs) > 500 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere?
+                    if (Math.Abs(playPosMs - idealPlayPosMs) > 5000 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere?
                     {
-                        //FIXME enable tracking when needed !!! below.
-                        //channel.setPosition(idealPlayPosMs, FMOD.TIMEUNIT.MS);
-                        //playPosMs = idealPlayPosMs;
+                        //FIXME HACK enable tracking when needed !!! below.
+                        channel.setPosition(idealPlayPosMs, FMOD.TIMEUNIT.MS);
+                        playPosMs = idealPlayPosMs;
                     }
                     // store current pos on canvas
                     if (canvas.TimeMarker == 0)
@@ -207,7 +207,7 @@ namespace TTMusicEngine.Impl
             }
             else
             {   // was not playing but should be rendered - hence, initiate playing now
-                if (rp.Time < _soundDuration - 0.050 ) // extra safety margin - do not start if close to end.
+                if (rp.Time < _soundDuration - 0.050 ) // extra safety margin - do not start if close to end. TODO configurable time?
                 {
                     channel = PlaySample(rp, canvas, dspList);
                     channel.setLoopCount(audioRepeats - 1);
