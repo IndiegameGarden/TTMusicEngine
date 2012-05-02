@@ -1,5 +1,6 @@
-// (c) 2010-2011 TranceTrance.com. Distributed under the FreeBSD license in LICENSE.txt
+// (c) 2010-2012 TranceTrance.com. Distributed under the FreeBSD license in LICENSE.txt
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
@@ -30,7 +31,10 @@ namespace TTMusicEngine.Impl
         {
             if (MusicEngine.AudioEngine != null)
             {
-                _fn = MusicEngine.GetInstance().AudioPath + "\\" + fn;
+                if (Path.IsPathRooted(fn))
+                    _fn = fn;
+                else
+                    _fn = Path.Combine( MusicEngine.GetInstance().AudioPath , fn );
                 createFMODSound(_fn);
             }
         }
