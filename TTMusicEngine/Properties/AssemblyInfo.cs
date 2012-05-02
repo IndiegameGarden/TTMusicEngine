@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("TTMusicEngine")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("TranceTrance.com")]
-[assembly: AssemblyCopyright("Copyright © TranceTrance.com 2010-2011")]
+[assembly: AssemblyCopyright("Copyright © TranceTrance.com 2010-2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,4 +29,4 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.4")]
