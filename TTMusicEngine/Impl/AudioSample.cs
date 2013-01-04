@@ -192,7 +192,7 @@ namespace TTMusicEngine.Impl
                     int idealPlayPosMs = (int) Math.Round(rp.Time * 1000.0);
                     channel.getPosition(ref playPosMs, FMOD.TIMEUNIT.MS);
                     
-                    if (Math.Abs(((int)playPosMs) - idealPlayPosMs) > 5000 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere?
+                    if (Math.Abs(((int)playPosMs) - idealPlayPosMs) > 5000 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere? configurable per sample?
                     {
                         //FIXME HACK enable tracking when needed !!! below.
                         channel.setPosition((uint)idealPlayPosMs, FMOD.TIMEUNIT.MS);
