@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using Microsoft.Xna.Framework.Content;
 using TTMusicEngine;
 
 namespace TTMusicEngine.Impl
@@ -84,7 +83,7 @@ namespace TTMusicEngine.Impl
             
             if (Util.ERRCHECK(r))
             {
-                throw new ContentLoadException(Util.ERRMSG(r));
+                throw new Exception(Util.ERRMSG(r));
             }
             else
             {
