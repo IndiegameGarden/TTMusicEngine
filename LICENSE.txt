@@ -1,6 +1,6 @@
 For audio material license see test-audio/AUDIO-LICENSE.txt.
 
-Copyright (c) 2010-2013, TranceTrance.com and its domain owner
+Copyright (c) 2010-2013, IndiegameGarden.com and its domain owner
 All rights reserved.
 
 Some files may be subject to other copyright and
