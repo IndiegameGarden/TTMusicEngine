@@ -1,4 +1,4 @@
-// (c) 2010-2011 TranceTrance.com. Distributed under the FreeBSD license in LICENSE.txt
+// (c) 2010-2013 IndiegameGarden.com. Distributed under the FreeBSD license in LICENSE.txt
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("TTMusicEngineTest")]
 [assembly: AssemblyProduct("TTMusicEngineTest")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("TranceTrance.com")]
-[assembly: AssemblyCopyright("Copyright © TranceTrance.com 2010-2011")]
+[assembly: AssemblyCompany("IndiegameGarden.com")]
+[assembly: AssemblyCopyright("Copyright © IndiegameGarden.com 2010-2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

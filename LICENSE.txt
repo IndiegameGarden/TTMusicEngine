@@ -1,10 +1,13 @@
 For audio material license see test-audio/AUDIO-LICENSE.txt.
 
-Copyright (c) 2010-2011, TranceTrance.com and its domain owner
+Copyright (c) 2010-2013, IndiegameGarden.com and its domain owner
 All rights reserved.
 
 Some files may be subject to other copyright and
 licenses, see each file header for license information per source file.
+
+FMOD Ex C# wrapper source files are Copyright (c), Firelight Technologies Pty, 
+Ltd. 2004-2009. 
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:

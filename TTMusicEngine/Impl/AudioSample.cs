@@ -1,10 +1,9 @@
-// (c) 2010-2012 TranceTrance.com. Distributed under the FreeBSD license in LICENSE.txt
+// (c) 2010-2013 IndiegameGarden.com. Distributed under the FreeBSD license in LICENSE.txt
 ﻿using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
 using System.Text;
-using Microsoft.Xna.Framework.Content;
 using TTMusicEngine;
 
 namespace TTMusicEngine.Impl
@@ -84,7 +83,7 @@ namespace TTMusicEngine.Impl
             
             if (Util.ERRCHECK(r))
             {
-                throw new ContentLoadException(Util.ERRMSG(r));
+                throw new Exception(Util.ERRMSG(r));
             }
             else
             {
@@ -189,14 +188,14 @@ namespace TTMusicEngine.Impl
                     
                     // check playing time
                     uint playPosMs = 0;
-                    uint idealPlayPosMs = (uint)(rp.Time * 1000.0);
+                    int idealPlayPosMs = (int) Math.Round(rp.Time * 1000.0);
                     channel.getPosition(ref playPosMs, FMOD.TIMEUNIT.MS);
                     
-                    if (Math.Abs(playPosMs - idealPlayPosMs) > 5000 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere?
+                    if (Math.Abs(((int)playPosMs) - idealPlayPosMs) > 5000 && idealPlayPosMs >= 0)  // FIXME specify error margin better, somewhere? configurable per sample?
                     {
                         //FIXME HACK enable tracking when needed !!! below.
-                        channel.setPosition(idealPlayPosMs, FMOD.TIMEUNIT.MS);
-                        playPosMs = idealPlayPosMs;
+                        channel.setPosition((uint)idealPlayPosMs, FMOD.TIMEUNIT.MS);
+                        playPosMs = (uint)idealPlayPosMs;
                     }
                     // store current pos on canvas
                     if (canvas.TimeMarker == 0)

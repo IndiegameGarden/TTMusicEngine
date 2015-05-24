@@ -1,16 +1,13 @@
+NOTE: included from 2013 onwards as part of TTengine.
 
-TTMusicEngine is not a typical audio engine but a music engine, which
-uses an audio engine "under the hood". It supports multi-track 
-interactive music generation and effects for C# XNA 4.0. Currently it
-links to the FMOD audio engine but future binding to IrrKlang is also
-planned. In the future it might support an easy declarative scripting 
+TTMusicEngine is a C# music engine, which uses an audio engine 
+"under the hood". It supports multi-track 
+interactive (real-time) music/audio mixing and effects. Currently it
+links to the FMOD audio engine but binding to IrrKlang is also
+possible. In the future it might support an easy declarative scripting 
 language for defining music and effects, but currently only scripting
 in C# is supported. Warning: the API is not particularly friendly nor
 documented at this point in time!
 
-In the future, more information might be posted on http://www.trancetrance.com/
-
-(c) TranceTrance.com 2010-2011. Distributed under a FreeBSD license. For license 
-conditions see LICENSE.txt and the copyright notices in source files. FMOD Ex 
-C# wrapper source files are Copyright (c), Firelight Technologies Pty, 
-Ltd. 2004-2009. 
+For license conditions see LICENSE.txt and the copyright notices in 
+source files. 
